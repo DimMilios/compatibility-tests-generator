@@ -7,7 +7,7 @@ let files = JSON.parse(fs.readFileSync('./imageDetails.json', 'utf-8'))
 
 const imgIfExists = (name, nameList) => nameList.includes(name) ? `![${name}-vhv](./kern-images/${name})` : `![**VHV could not render: ${name}**](./error.svg)`
 
-let mdTemplate = `# Comparison
+let mdTemplate = `# Tests
 ${expand()}`
 
 function expand() {
@@ -29,4 +29,4 @@ ${imgIfExists(key, kernFiles)}`
   })
 }
 
-fs.writeFileSync('test.md', mdTemplate)
+fs.writeFileSync('tests.md', mdTemplate)
