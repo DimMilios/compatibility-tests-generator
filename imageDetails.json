@@ -1,0 +1,514 @@
+{
+  "01a-Pitches-Pitches.xml": {
+    "src": "ba/lily-3043c78c.png",
+    "desc": "All pitches from G to c”” in ascending steps; First without accidentals, then with a sharp and then with a flat accidental. Double alterations and cautionary accidentals are tested at the end. "
+  },
+  "01b-Pitches-Intervals.xml": {
+    "src": "39/lily-1e1a6f77.png",
+    "desc": "All pitch intervals in ascending jump size. "
+  },
+  "01c-Pitches-NoVoiceElement.xml": {
+    "src": "4e/lily-b10ad0ed.png",
+    "desc": "The <voice> element of notes is optional in MusicXML (although Dolet always writes it out). Here, there is one note with lyrics, but without a voice assigned. It should still be correctly converted. "
+  },
+  "01d-Pitches-Microtones.xml": {
+    "src": "dc/lily-da7d2628.png",
+    "desc": "Some microtones: c flat-and-a-half, d half-flat, e half-sharp, f sharp-and-a half. Once in the lower and once in the upper region of the staff. "
+  },
+  "01e-Pitches-ParenthesizedAccidentals.xml": {
+    "src": "17/lily-3f3527a9.png",
+    "desc": "Accidentals can be cautionary or editorial. Each measure has a normal accidental, an editorial, a cautionary and an editioal and cautionary accidental. "
+  },
+  "01f-Pitches-ParenthesizedMicrotoneAccidentals.xml": {
+    "src": "ab/lily-3cfba98c.png",
+    "desc": "Microtone accidentals can be cautionary or editorial. Each measure has a normal accidental, an editorial, a cautionary and an editioal and cautionary accidental. "
+  },
+  "02a-Rests-Durations.xml": {
+    "src": "19/lily-4197d4c2.png",
+    "desc": "All different rest lengths: A two-bar multi-measure rest, a whole rest, a half, etc. until a 128th-rest; Then the same with dotted durations. "
+  },
+  "02b-Rests-PitchedRests.xml": {
+    "src": "bf/lily-366e7b0a.png",
+    "desc": "Rests can have explicit pitches, where they are displayed. The first rest uses no explicit position and should use the default position, all others are explicitly positioned somewhere else. "
+  },
+  "02c-Rests-MultiMeasureRests.xml": {
+    "src": "c9/lily-61c83ff7.png",
+    "desc": "Four multi-measure rests: 3 measures, 15 measures, 1 measure, and 12 measures. "
+  },
+  "02d-Rests-Multimeasure-TimeSignatures.xml": {
+    "src": "15/lily-7938903a.png",
+    "desc": "Multi-Measure rests should always be converted into durations that are a multiple of the time signature. "
+  },
+  "02e-Rests-NoType.xml": {
+    "src": "36/lily-976c2068.png",
+    "desc": "In some cases, a rest might not have its type attribute set (this happens, for example, with voices in Finale, where you don’t manually insert a rest). "
+  },
+  "03a-Rhythm-Durations.xml": {
+    "src": "68/lily-12d29b6a.png",
+    "desc": "All note durations, from long, brevis, whole until 128th; First with their plain values, then dotted and finally doubly-dotted. "
+  },
+  "03b-Rhythm-Backup.xml": {
+    "src": "9a/lily-05828b9d.png",
+    "desc": "Two voices with a backup, that does not jump to the beginning for the measure for voice 2, but somewhere in the middle. Voice 2 thus won’t have any notes or rests for the first beat of the measures. "
+  },
+  "03c-Rhythm-DivisionChange.xml": {
+    "src": "b2/lily-1922a761.png",
+    "desc": "Although uncommon, the divisions of a quarter note can change somewhere in the middle of a MusicXML file. Here, the first half measure uses a division of 1, which then changes to 8 in the middle of the first measure and to 38 in the middle of the second measure. "
+  },
+  "03d-Rhythm-DottedDurations-Factors.xml": {
+    "src": "c6/lily-5ca97d66.png",
+    "desc": "Several durations can be written with dots. For multimeasure rests, we can also have durations that cannot be expressed with dotted notes (like 5/8). "
+  },
+  "11a-TimeSignatures.xml": {
+    "src": "8e/lily-b58c2f4d.png",
+    "desc": "Various time signatures: 2/2 (alla breve), 4/4 (C), 2/2, 3/2, 2/4, 3/4, 4/4, 5/4, 3/8, 6/8, 12/8 "
+  },
+  "11b-TimeSignatures-NoTime.xml": {
+    "src": "8d/lily-b8c51398.png",
+    "desc": "A score without a time signature (but with a key and clefs) "
+  },
+  "11c-TimeSignatures-CompoundSimple.xml": {
+    "src": "d6/lily-4c349d01.png",
+    "desc": "Compound time signatures with same denominator: (3+2)/8 and (5+3+1)/4. "
+  },
+  "11d-TimeSignatures-CompoundMultiple.xml": {
+    "src": "4f/lily-da78eb61.png",
+    "desc": "Compound time signatures with separate fractions displayed: 3/8+2/8+3/4 and 5/2+1/8. "
+  },
+  "11e-TimeSignatures-CompoundMixed.xml": {
+    "src": "fc/lily-c5d620f9.png",
+    "desc": "Compound time signatures of mixed type: (3+2)/8+3/4. "
+  },
+  "11f-TimeSignatures-SymbolMeaning.xml": {
+    "src": "78/lily-3f8412cc.png",
+    "desc": "A time signature of 3/8 with the symbol=\"cut\" attribute and two symbol=\"single-number\" attributes with compound time signatures. Shall the symbol be ignored in this case? "
+  },
+  "11g-TimeSignatures-SingleNumber.xml": {
+    "src": "4a/lily-3fedb63b.png",
+    "desc": "Time signature displayed as a single number. "
+  },
+  "11h-TimeSignatures-SenzaMisura.xml": {
+    "src": "0f/lily-cdc1d94e.png",
+    "desc": "Senza-misura time signature "
+  },
+  "12a-Clefs.xml": {
+    "src": "b8/lily-58c06cd0.png",
+    "desc": "Various clefs: G, C, F, percussion, TAB and none; some are also possible with transposition and on other staff lines than their default (e.g. soprano/alto/tenor/baritone C clefs); Each measure shows a different clef (measure 17 has the \"none\" clef), only measure 18 has the same treble clef as measure 1. "
+  },
+  "12b-Clefs-NoKeyOrClef.xml": {
+    "src": "ea/lily-80be94fb.png",
+    "desc": "A score without any key or clef defined. The default (4/4 in treble clef) should be used. "
+  },
+  "13a-KeySignatures.xml": {
+    "src": "7a/lily-4dfb4e89.png",
+    "desc": "Various key signature: from 11 flats to 11 sharps (each one first one measure in major, then one measure in minor) "
+  },
+  "13b-KeySignatures-ChurchModes.xml": {
+    "src": "b6/lily-3fcef321.png",
+    "desc": "All different modes: major, minor, ionian, dorian, phrygian, lydian, mixolydian, aeolian, and locrian; All modes are given with 2 sharps. "
+  },
+  "13c-KeySignatures-NonTraditional.xml": {
+    "src": "25/lily-8592c666.png",
+    "desc": "Non-traditional key signatures, where each alteration is separately given. Here we have (f sharp, a flat, b flat) and (c flatflat, g sharp sharp, d flat, b sharp, f natural), where in the second case an explicit octave is given for each alteration. "
+  },
+  "13d-KeySignatures-Microtones.xml": {
+    "src": "9c/lily-b0ae9f4a.png",
+    "desc": "Non-traditional key signatures with microtone alterations: (g flat-and-a-half, a flat, b half-flat, c natural, d half-sharp, e sharp, f sharp-and-a-half). "
+  },
+  "14a-StaffDetails-LineChanges.xml": {
+    "src": "a7/lily-3aadc5c0.png",
+    "desc": "The number of staff lines can be modified by using the staff-lines child of the staff-details attribute. This can happen globally (the first staff has one line globally) or during the part at the beginning of a measure and even inside a measure (the second part has 5 lines initially, 4 at the beginning of the second measure, and 3 starting in the middle of the third measure). "
+  },
+  "21a-Chord-Basic.xml": {
+    "src": "bf/lily-6a7408db.png",
+    "desc": "One simple chord consisting of two notes. "
+  },
+  "21b-Chords-TwoNotes.xml": {
+    "src": "95/lily-cee65c4b.png",
+    "desc": "Some subsequent (identical) two-note chords. "
+  },
+  "21c-Chords-ThreeNotesDuration.xml": {
+    "src": "aa/lily-4858d0b7.png",
+    "desc": "Some three-note chords, with various durations. "
+  },
+  "21d-Chords-SchubertStabatMater.xml": {
+    "src": "5c/lily-1d6b9840.png",
+    "desc": "Chords in the second measure, after several ornaments in the first measure and a p at the beginning of the second measure. "
+  },
+  "21e-Chords-PickupMeasures.xml": {
+    "src": "31/lily-9274b576.png",
+    "desc": "Check for proper chord detection after a pickup measure (i.e. the first beat of the measure is not aligned with multiples of the time signature)! "
+  },
+  "21f-Chord-ElementInBetween.xml": {
+    "src": "25/lily-cd415fca.png",
+    "desc": "Between the individual notes of a chord there can be direction or harmony elements, which should be properly assigned to the chord (or the position of the chord). "
+  },
+  "22a-Noteheads.xml": {
+    "src": "89/lily-cccd894c.png",
+    "desc": "Different note styles, using the <notehead> element. First, each note head style is printed with four quarter notes, two with filled heads, two with unfilled heads, where first the stem is up and then the stem is down. After that, each note head style is printed with a half note (should have an unfilled head by default). Finally, the Aiken note head styles are tested, once with stem up and once with stem down. "
+  },
+  "22b-Staff-Notestyles.xml": {
+    "src": "b0/lily-731bb120.png",
+    "desc": "Staff-connected note styles: slash notation, hidden notes (with and without hidden staff lines) "
+  },
+  "22c-Noteheads-Chords.xml": {
+    "src": "3a/lily-242df57b.png",
+    "desc": "Different note styles for individual notes inside a chord, using the <notehead> element. "
+  },
+  "22d-Parenthesized-Noteheads.xml": {
+    "src": "76/lily-9f8992b3.png",
+    "desc": "Parenthesized note heads. First, a single parenthesized note is tested, once with a normal and then with a non-standard notehead, then two chords with some/all parenthesized noteheads and finally a parenthesized rest. "
+  },
+  "23a-Tuplets.xml": {
+    "src": "53/lily-64dfb2d0.png",
+    "desc": "Some tuplets (3:2, 3:2, 3:2, 4:2, 4:1, 7:3, 6:2) with the default tuplet bracket displaying the number of actual notes played. The second tuplet does not have a number attribute set. "
+  },
+  "23b-Tuplets-Styles.xml": {
+    "src": "9a/lily-977f763d.png",
+    "desc": "Different tuplet styles: default, none, x:y, x:y-note; Each with bracket, slur and none. Finally, non-standard 4:3 and 17:2 tuplets are given. "
+  },
+  "23c-Tuplet-Display-NonStandard.xml": {
+    "src": "39/lily-a73c42e2.png",
+    "desc": "Displaying tuplet note types, that might not coincide with the displayed note. The first two tuplets take the type from the note, the second two from the <time-modification> element, the remaining pair of tuplets from the <tuplet> notation element. The tuplets in measure 3 specify both a number of notes and a type inside the <tuplet-actual> and <tuplet-normal> elements, the ones in measure 4 specify only a note type (but no number), and the ones in measure 5 specify only a number of tuplet-notes (but no type, which is deduced from the note’s type). The first tuplet of measures 3-5 uses ’display-type=\"actual\"’, the second one ’display-type=\"both\"’. FIXME: The tuplet-normal should coincide with the real notes! "
+  },
+  "23d-Tuplets-Nested.xml": {
+    "src": "78/lily-b244aee5.png",
+    "desc": "Tuplets can be nested. Here there is a 5:2 tuplet inside a 3:2 tuple (all consisting of written eighth notes). "
+  },
+  "23e-Tuplets-Tremolo.xml": {
+    "src": "a8/lily-3c84c451.png",
+    "desc": "Tremolo tuplets are tuplets on single notes with a tremolo ornament. The application shall correctly import these notes with 2/3 or their time... "
+  },
+  "23f-Tuplets-DurationButNoBracket.xml": {
+    "src": "c5/lily-423abe07.png",
+    "desc": "Some \"triplets\" on the end of the first and in the second staff, using only <time-modification>, but not explicit tuplet bracket. Thus, the duration of the notes in the second staff should be scaled properly in comparison to staff 1, but no visual indication about the tuplets is given. "
+  },
+  "24a-GraceNotes.xml": {
+    "src": "15/lily-6d13bc32.png",
+    "desc": "Different kinds of grace notes: acciaccatura, appoggiatura; beamed grace notes; grace notes with accidentals; different durations of the grace notes. "
+  },
+  "24b-ChordAsGraceNote.xml": {
+    "src": "ec/lily-dbf59765.png",
+    "desc": "Chords as grace notes. "
+  },
+  "24c-GraceNote-MeasureEnd.xml": {
+    "src": "f3/lily-f4cca72c.png",
+    "desc": "A grace note that appears at the measure end (without any steal-from-* attribute set). Some applications need to convert this into an after-grace. "
+  },
+  "24d-AfterGrace.xml": {
+    "src": "84/lily-29b1422a.png",
+    "desc": "Some grace notes and after-graces (indicated by steal-time-previous and steal-time-following). "
+  },
+  "24e-GraceNote-StaffChange.xml": {
+    "src": "a4/lily-f1865cf7.png",
+    "desc": "A grace note on a different staff than the actual note. "
+  },
+  "24f-GraceNote-Slur.xml": {
+    "src": "93/lily-2851b379.png",
+    "desc": "A grace note with a slur to the actual note. This can be interpreted as acciaccatura or appoggiatura, depending on the existence of a slash. "
+  },
+  "31a-Directions.xml": {
+    "src": "91/lily-6fcc169a.png",
+    "desc": "All <direction> elements defined in MusicXML. The lyrics for each note describes the direction element assigned to that note. "
+  },
+  "31c-MetronomeMarks.xml": {
+    "src": "bc/lily-28b6e25f.png",
+    "desc": "Tempo Markings: note=bpm, text (note=bpm), note=note, (note=note), (note=bpm) "
+  },
+  "32a-Notations.xml": {
+    "src": "fe/lily-f8a7d466.png",
+    "desc": "All <notation> elements defined in MusicXML. The lyrics show the notation assigned to each note. "
+  },
+  "32b-Articulations-Texts.xml": {
+    "src": "ad/lily-0cc034a0.png",
+    "desc": "Text markup: different font sizes, weights and colors. "
+  },
+  "32c-MultipleNotationChildren.xml": {
+    "src": "c7/lily-772b36ca.png",
+    "desc": "It should not make any difference whether two articulations are given inside two different notation elements, inside two different articulations children of the same notation element or inside the same articulations element. Thus, all three notes should have a staccato and an accent. "
+  },
+  "32d-Arpeggio.xml": {
+    "src": "3c/lily-14a6ed53.png",
+    "desc": "Different Arpeggio directions (normal, up, down, non-arpeggiate) "
+  },
+  "33a-Spanners.xml": {
+    "src": "19/lily-e86c52dc.png",
+    "desc": "Several spanners defined in MusicXML: tuplet, slur (solid, dashed), tie,  wedge (cresc, dim), tr + wavy-line, single-note trill spanner, octave-shift (8va,15mb), bracket (solid down/down, dashed down/down, solid none/down, dashed none/up, solid none/none), dashes, glissando (wavy), bend-alter, slide (solid), grouping, two-note tremolo, hammer-on, pull-off, pedal (down, change, up). "
+  },
+  "33b-Spanners-Tie.xml": {
+    "src": "3e/lily-a5b6b35c.png",
+    "desc": "Two simple tied whole notes "
+  },
+  "33c-Spanners-Slurs.xml": {
+    "src": "8a/lily-3250e012.png",
+    "desc": "A note can be the end of one slur and the start of a new slur. Also, in MusicXML, nested slurs are possible like in the second measure where one slur goes over all four notes, and another slur goes from the second to the third note. "
+  },
+  "33d-Spanners-OctaveShifts.xml": {
+    "src": "4d/lily-f2d99909.png",
+    "desc": "All types of octave shifts (15ma, 15mb, 8va, 8vb) "
+  },
+  "33e-Spanners-OctaveShifts-InvalidSize.xml": {
+    "src": "8f/lily-1a227ded.png",
+    "desc": "Invalid octave-shifts: 27 down, 11 up. "
+  },
+  "33f-Trill-EndingOnGraceNote.xml": {
+    "src": "73/lily-dc7bad92.png",
+    "desc": "A trill spanner that spans a grace note and ends on an after-grace note at the end of the measure. "
+  },
+  "33g-Slur-ChordedNotes.xml": {
+    "src": "a9/lily-2172077b.png",
+    "desc": "Slurs on chorded notes: Only the first note of the chord should get the slur notation. Some applications print out the slur for all notes – these should be ignored. "
+  },
+  "33h-Spanners-Glissando.xml": {
+    "src": "e8/lily-7b41d2d7.png",
+    "desc": "All different types of glissando defined in MusicXML "
+  },
+  "33i-Ties-NotEnded.xml": {
+    "src": "07/lily-67e335dc.png",
+    "desc": "Several ties that have their end tag missing. "
+  },
+  "41a-MultiParts-Partorder.xml": {
+    "src": "e2/lily-754cfe68.png",
+    "desc": "A piece with four parts (P0, P1, P2, P3; different from what Finale creates!). Are they converted in the correct order? "
+  },
+  "41b-MultiParts-MoreThan10.xml": {
+    "src": "8e/lily-10837e3c.png",
+    "desc": "A piece with 20 parts to check whether an application supports that many parts and whether they are correctly sorted. "
+  },
+  "41c-StaffGroups.xml": {
+    "src": "8c/lily-87dfdbd7.png",
+    "desc": "A huge orchestra score with 28 parts and different kinds of nested bracketed groups. Each part/group is assigned a name and an abbreviation to be shown before the staff. Also, most of the groups show unbroken barlines, while the barlines are broken between the groups. "
+  },
+  "41d-StaffGroups-Nested.xml": {
+    "src": "2a/lily-3c88fa08.png",
+    "desc": "Two properly nested part groups: One group  (with a square bracket) goes from staff 2 to 4) and another group (with a curly bracket) goes from staff 3 to 4. "
+  },
+  "41e-StaffGroups-InstrumentNames-Linebroken.xml": {
+    "src": "10/lily-ab9be0c7.png",
+    "desc": "Part names and abbreviations can contain line breaks. "
+  },
+  "41f-StaffGroups-Overlapping.xml": {
+    "src": "3c/lily-80f7b95d.png",
+    "desc": "MusicXML allows for overlapping part-groups, while many applications do not allow overlapping groups, but require them to be properly nested. In this case, one group (with a square bracket) goes from staff 2 to 4) and another group (with a curly bracket) goes from staff 3 to 5. "
+  },
+  "41g-PartNoId.xml": {
+    "src": "3c/lily-eee774dd.png",
+    "desc": "A part with no id attribute. Since this piece has only one part, it is clear which part is described by the one part element. "
+  },
+  "41h-TooManyParts.xml": {
+    "src": "55/lily-87fe6197.png",
+    "desc": "This piece has more part elements than the part-list section gives. One can either convert all the parts present, but not listed in the part-list, or simply not import / ignore them. "
+  },
+  "41i-PartNameDisplay-Override.xml": {
+    "src": "de/lily-4483657e.png",
+    "desc": "The first staff uses only part-name, while the second one (same part-name) overrides it with a custom text. Similar for the part-abbreviation used in subsequent staves. "
+  },
+  "42a-MultiVoice-TwoVoicesOnStaff-Lyrics.xml": {
+    "src": "43/lily-8a48bcdb.png",
+    "desc": "Two voices share one staff. Each voice is assigned some lyrics. "
+  },
+  "42b-MultiVoice-MidMeasureClefChange.xml": {
+    "src": "df/lily-e4b39e31.png",
+    "desc": "A multi-voice / multi-staff part with a clef change in the middle of a measure and a <backward> for voice 2 jumping back beyond that clef change. "
+  },
+  "43a-PianoStaff.xml": {
+    "src": "f8/lily-70c45971.png",
+    "desc": "A simple piano staff "
+  },
+  "43b-MultiStaff-DifferentKeys.xml": {
+    "src": "56/lily-77c12d1b.png",
+    "desc": "A piano staff with different keys and clefs for each of its staves. The keys and clefs for both staves are given at the very beginning of the measure. "
+  },
+  "43c-MultiStaff-DifferentKeysAfterBackup.xml": {
+    "src": "13/lily-2c30efa4.png",
+    "desc": "A piano staff with different keys and clefs for each of its staves. The key and clef for the second staff is given only after a backward, just before the first note of the second staff is given, but after the whole measure for staff 1 has been given. "
+  },
+  "43d-MultiStaff-StaffChange.xml": {
+    "src": "ae/lily-838f2675.png",
+    "desc": "Staff changes in a piano staff. The voice from the second staff has some notes/chords on the first staff. The final two chords have some notes on the first, some on the second staff. "
+  },
+  "43e-Multistaff-ClefDynamics.xml": {
+    "src": "a3/lily-a9f66977.png",
+    "desc": "A piano staff with dynamics and clef changes, where each element (ffff, wedge and clef changes) applies only to one voice or one staff, respectively. "
+  },
+  "45a-SimpleRepeat.xml": {
+    "src": "2a/lily-143b4352.png",
+    "desc": "A simple, repeated measure (repeated 5 times) "
+  },
+  "45b-RepeatWithAlternatives.xml": {
+    "src": "26/lily-ddb8403f.png",
+    "desc": "A simple repeat with two alternative endings (volta brackets). "
+  },
+  "45c-RepeatMultipleTimes.xml": {
+    "src": "85/lily-df8239bc.png",
+    "desc": "Repeats can also be nested. "
+  },
+  "45d-Repeats-Nested-Alternatives.xml": {
+    "src": "5f/lily-a0dcf73b.png",
+    "desc": "Nested repeats, each with alternative endings. "
+  },
+  "45e-Repeats-Nested-Alternatives.xml": {
+    "src": "97/lily-b47f0cf7.png",
+    "desc": "Some more nested repeats with alternatives. The barline between measure 7 and 8 will probably be messed up! (Should be a repeat on both sides!) "
+  },
+  "45f-Repeats-InvalidEndings.xml": {
+    "src": "b0/lily-7c59da6d.png",
+    "desc": "Some more nested repeats with alternatives, where the MusicXML file does not make sense in the first place. How well are applications able to cope with improper repeats and alternatives? "
+  },
+  "45g-Repeats-NotEnded.xml": {
+    "src": "77/lily-48ca98aa.png",
+    "desc": "A forward-repeating bar line without an ending repeat bar. "
+  },
+  "46a-Barlines.xml": {
+    "src": "59/lily-2761c689.png",
+    "desc": "Different types of (non-repeat) barlines: default (no setting), regular, dotted, dashed, heavy, light-light, light-heavy, heavy-light, heavy-heavy, tick, short, none. "
+  },
+  "46b-MidmeasureBarline.xml": {
+    "src": "8b/lily-ee7f7e54.png",
+    "desc": "Barlines can appear at mid-measure positions, without using an implicit measure! "
+  },
+  "46c-Midmeasure-Clef.xml": {
+    "src": "84/lily-0f7c4871.png",
+    "desc": "A clef change in the middle of a measure, using either an implicit measure or simply placing the attributes in the middle of the measure. "
+  },
+  "46d-PickupMeasure-ImplicitMeasures.xml": {
+    "src": "e9/lily-06fcac75.png",
+    "desc": "A 3/8 pickup measure, a measure that is split into one (incomplete, only 2/4) measure and an implicit measure, and an incomplete measure (containg 3/4). "
+  },
+  "46e-PickupMeasure-SecondVoiceStartsLater.xml": {
+    "src": "6b/lily-6672cfa3.png",
+    "desc": "Voice 2 should start at 2nd beat of first full measure. "
+  },
+  "46f-IncompleteMeasures.xml": {
+    "src": "db/lily-7a7278c0.png",
+    "desc": "Measures can contain less notes than the time signature says. Here, the first and third measures contain only two quarters instead of four. "
+  },
+  "46g-PickupMeasure-Chordnames-FiguredBass.xml": {
+    "src": "dc/lily-5d81e32b.png",
+    "desc": "Pickup measure with chord names and figured bass. "
+  },
+  "51b-Header-Quotes.xml": {
+    "src": "f1/lily-a3ec7672.png",
+    "desc": "Several header fields and part names can contain quotes (\"). This test checks whether they are converted/imported without problems (i.e. whether they are correctly escaped when converting). "
+  },
+  "51c-MultipleRights.xml": {
+    "src": "7d/lily-97905894.png",
+    "desc": "There can be multiple <rights> tags in the identification element of the score. The conversion shall still work, ideally using both of them. "
+  },
+  "51d-EmptyTitle.xml": {
+    "src": "37/lily-ec41d1a8.png",
+    "desc": "A piece with an empty (but existing) work-title, but a non-empty movement-title. In this case the movement-title should be chosen, even though the work-title exists. "
+  },
+  "52a-PageLayout.xml": {
+    "src": "3f/lily-36f1d4c9.png",
+    "desc": "Several page layout settings: paper size, margins, system margins and distances, different fonts, etc. "
+  },
+  "52b-Breaks.xml": {
+    "src": "ab/lily-43fe761c.png",
+    "desc": "System and page breaks, given in a <print> element "
+  },
+  "61a-Lyrics.xml": {
+    "src": "65/lily-664825ea.png",
+    "desc": "Some notes with simple lyrics: Syllables, notes without a syllable, syllable spanners. "
+  },
+  "61b-MultipleLyrics.xml": {
+    "src": "f2/lily-5c924edd.png",
+    "desc": "Multiple (simple) lyrics. The order of the exported stanzas is relevant (identified by the number attribute in this test case) "
+  },
+  "61c-Lyrics-Pianostaff.xml": {
+    "src": "73/lily-df1b1132.png",
+    "desc": "Lyrics assigned to the voices of a piano staff containing two simple staves. Each staff is assigned exactly one lyrics line. "
+  },
+  "61d-Lyrics-Melisma.xml": {
+    "src": "0d/lily-a5dc5956.png",
+    "desc": "How to treat lyrics and slurred notes. Normally, a slurred group of notes is assigned only one lyrics syllable. "
+  },
+  "61e-Lyrics-Chords.xml": {
+    "src": "ac/lily-0cf90289.png",
+    "desc": "Assigning lyrics to chorded notes. "
+  },
+  "61f-Lyrics-GracedNotes.xml": {
+    "src": "bb/lily-ce3ff119.png",
+    "desc": "Grace notes shall not mess up the lyrics, and they shall not be assigned a syllable. "
+  },
+  "61g-Lyrics-NameNumber.xml": {
+    "src": "ca/lily-a41e16cd.png",
+    "desc": "A lyrics syllable can have both a number and a name attribute. The question is: What should be used to put syllables of the same voice together. This example uses different number/name combinations to check how different applications handle this unspecified case (The advice on the MusicXML mailing list was \"there is no correct way, each application can do what it thinks is best\"). "
+  },
+  "61h-Lyrics-BeamsMelismata.xml": {
+    "src": "ef/lily-0791a5b5.png",
+    "desc": "Beaming or slurs can indicate melismata for lyrics. Also make sure that notes without an explicit syllable are treated as if they were part of a melisma. "
+  },
+  "61i-Lyrics-Chords.xml": {
+    "src": "0b/lily-534ac126.png",
+    "desc": "Each note of a chord can have some lyrics attached. In this case, each note of the chord has lyrics of the form \"Lyrics [123]\" attached, where each lyrics has a different number attribute to distinguish them. These syllables should be imported into three different stanzas and the timing should be correct. "
+  },
+  "61j-Lyrics-Elisions.xml": {
+    "src": "79/lily-83720e71.png",
+    "desc": "Multiple lyrics syllables assigned to a single note are implemented either using a space in the lyrics or by using the <elision> lyrics element. This testcase checks both of them. First, a note with on syllable is given, then a note with two syllables separated by a spcae and finally a note with two and one with three syllables implemented using <elision> is given. "
+  },
+  "61k-Lyrics-SpannersExtenders.xml": {
+    "src": "b0/lily-7821c23e.png",
+    "desc": "Lyrics spanners: continued syllables and extenders, possibly spanning multiple notes. The intermediate notes do not have any <lyric> element. "
+  },
+  "71a-Chordnames.xml": {
+    "src": "02/lily-1f02271c.png",
+    "desc": "A normal staff with several (complex) chord names displayed. "
+  },
+  "71c-ChordsFrets.xml": {
+    "src": "00/lily-53313ee5.png",
+    "desc": "A staff with chord names and some fretboards shown. The fretboards can have an arbitrary number of frets/strings, can start at an arbitrary fret and can even contain fingering information. "
+  },
+  "71d-ChordsFrets-Multistaff.xml": {
+    "src": "0d/lily-c439d59e.png",
+    "desc": "Chords and fretboards assigned to the voices in a multi-voice, multi-staff part. There should be fret diagrams above each of the two staves. "
+  },
+  "71e-TabStaves.xml": {
+    "src": "7f/lily-a913c929.png",
+    "desc": "Some tablature staves, with explicit fingering information and different string tunings given in the MusicXML file. "
+  },
+  "71f-AllChordTypes.xml": {
+    "src": "2d/lily-61880887.png",
+    "desc": "All chord types defined in MusicXML. The staff will only contain one c’ note (NO chord) for all of them, but the chord names should be properly printed. "
+  },
+  "71g-MultipleChordnames.xml": {
+    "src": "6d/lily-0005a25f.png",
+    "desc": "There can be multiple subsequent harmony elements, indicating a harmony change during a note "
+  },
+  "72a-TransposingInstruments.xml": {
+    "src": "bd/lily-b489e3f1.png",
+    "desc": "Transposing instruments: Trumpet in Bb, Horn in Eb, Piano; All of them show the C major scale (the trumpet with 2 sharp, the horn with 3 sharp). "
+  },
+  "72b-TransposingInstruments-Full.xml": {
+    "src": "6a/lily-b51491f7.png",
+    "desc": "Various transposition. Each part plays a c”, just displayed in different display pitches. The second-to-last staff uses a transposition where the displayed c’ is an actual f”’ concert pitch. The final staff is an untransposed instrument. "
+  },
+  "72c-TransposingInstruments-Change.xml": {
+    "src": "02/lily-c8f460e1.png",
+    "desc": "The whole piece is in Bb major (sounding), so first the key signature should be one flat, after the change it should have no accidentals. "
+  },
+  "73a-Percussion.xml": {
+    "src": "78/lily-43a7288b.png",
+    "desc": "Three types of percussion staves: A five-line staff with bass clef for Timpani, a five-line staff with percussion clef, and a one-line percussion staff with only unpitched notes. "
+  },
+  "74a-FiguredBass.xml": {
+    "src": "35/lily-62e901e5.png",
+    "desc": "Note that this file does not contain any extenders! "
+  },
+  "75a-AccordionRegistrations.xml": {
+    "src": "2d/lily-e6b547c5.png",
+    "desc": "All possible accordion registrations. "
+  },
+  "90a-Compressed-MusicXML.mxl": {
+    "src": "c7/lily-1dfc6298.png",
+    "desc": "A compressed MusicXML file, containing a simple MusicXML score and the corresponding .pdf output for reference. "
+  },
+  "99a-Sibelius5-IgnoreBeaming.xml": {
+    "src": "1a/lily-0e1de815.png",
+    "desc": "Dolet 3 for Sibelius (5.1) did not print out any closing beam tags, only starting and continuing beam tags. For such files, one either needs to ignore all beaming information or close all beams "
+  },
+  "99b-Lyrics-BeamsMelismata-IgnoreBeams.xml": {
+    "src": "73/lily-1a8c3143.png",
+    "desc": "If we properly ignore all beaming information from the Dolet 3 for Sibelius export file, make sure that the lyrics syllables are still assigned to the correct notes. "
+  }
+}
